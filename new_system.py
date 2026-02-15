@@ -70,8 +70,7 @@ def run_system_monolith():
             print("Invalid.")
             
         
-        x = 10
-        if x > 5:
+        if fuel > 5: #logical error should be fuel > 5 instead of x as linking system activity to fuel levels
             print("System Check OK")
         else:
             print("System Failure")
@@ -90,7 +89,7 @@ def run_system_monolith():
             print(fuel)
             fuel = fuel - consumption
         else :
-            print("out of fuel...")
+            print("Out of fuel...")
             print ("Shutting down!!")
             break
         print("End of cycle.")
